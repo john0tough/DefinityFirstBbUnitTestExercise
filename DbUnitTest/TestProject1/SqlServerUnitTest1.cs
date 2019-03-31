@@ -37,72 +37,72 @@ namespace TestProject1
         /// </summary>
         private void InitializeComponent()
         {
-            Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction DemoVCom_AdvisorIndexDataGetTest_TestAction;
-            Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction DemoVCom_AdvisorIndexDataGetTest_PretestAction;
-            Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction DemoVCom_AdvisorIndexDataGetTest_PosttestAction;
-            Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.RowCountCondition rowCountCondition1;
-            Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ExpectedSchemaCondition expectedSchemaCondition1;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SqlServerUnitTest1));
-            this.DemoVCom_AdvisorIndexDataGetTestData = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestActions();
-            DemoVCom_AdvisorIndexDataGetTest_TestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
-            DemoVCom_AdvisorIndexDataGetTest_PretestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
-            DemoVCom_AdvisorIndexDataGetTest_PosttestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
-            rowCountCondition1 = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.RowCountCondition();
-            expectedSchemaCondition1 = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ExpectedSchemaCondition();
-            // 
-            // DemoVCom_AdvisorIndexDataGetTest_TestAction
-            // 
-            DemoVCom_AdvisorIndexDataGetTest_TestAction.Conditions.Add(rowCountCondition1);
-            DemoVCom_AdvisorIndexDataGetTest_TestAction.Conditions.Add(expectedSchemaCondition1);
-            resources.ApplyResources(DemoVCom_AdvisorIndexDataGetTest_TestAction, "DemoVCom_AdvisorIndexDataGetTest_TestAction");
-            // 
-            // DemoVCom_AdvisorIndexDataGetTestData
-            // 
-            this.DemoVCom_AdvisorIndexDataGetTestData.PosttestAction = DemoVCom_AdvisorIndexDataGetTest_PosttestAction;
-            this.DemoVCom_AdvisorIndexDataGetTestData.PretestAction = DemoVCom_AdvisorIndexDataGetTest_PretestAction;
-            this.DemoVCom_AdvisorIndexDataGetTestData.TestAction = DemoVCom_AdvisorIndexDataGetTest_TestAction;
-            // 
-            // DemoVCom_AdvisorIndexDataGetTest_PretestAction
-            // 
-            resources.ApplyResources(DemoVCom_AdvisorIndexDataGetTest_PretestAction, "DemoVCom_AdvisorIndexDataGetTest_PretestAction");
-            // 
-            // DemoVCom_AdvisorIndexDataGetTest_PosttestAction
-            // 
-            resources.ApplyResources(DemoVCom_AdvisorIndexDataGetTest_PosttestAction, "DemoVCom_AdvisorIndexDataGetTest_PosttestAction");
-            // 
-            // rowCountCondition1
-            // 
-            rowCountCondition1.Enabled = true;
-            rowCountCondition1.Name = "rowCountCondition1";
-            rowCountCondition1.ResultSet = 1;
-            rowCountCondition1.RowCount = 2;
-            // 
-            // expectedSchemaCondition1
-            // 
-            expectedSchemaCondition1.Enabled = true;
-            expectedSchemaCondition1.Name = "expectedSchemaCondition1";
-            resources.ApplyResources(expectedSchemaCondition1, "expectedSchemaCondition1");
-            expectedSchemaCondition1.Verbose = false;
-        }
+         Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction DemoVCom_AdvisorIndexDataGetTest_TestAction;
+         Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.RowCountCondition rowCountCondition1;
+         Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ExpectedSchemaCondition expectedSchemaCondition1;
+         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SqlServerUnitTest1));
+         Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction DemoVCom_AdvisorIndexDataGetTest_PretestAction;
+         Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction DemoVCom_AdvisorIndexDataGetTest_PosttestAction;
+         this.DemoVCom_AdvisorIndexDataGetTestData = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestActions();
+         DemoVCom_AdvisorIndexDataGetTest_TestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
+         rowCountCondition1 = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.RowCountCondition();
+         expectedSchemaCondition1 = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.Conditions.ExpectedSchemaCondition();
+         DemoVCom_AdvisorIndexDataGetTest_PretestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
+         DemoVCom_AdvisorIndexDataGetTest_PosttestAction = new Microsoft.Data.Tools.Schema.Sql.UnitTesting.SqlDatabaseTestAction();
+         // 
+         // DemoVCom_AdvisorIndexDataGetTest_TestAction
+         // 
+         DemoVCom_AdvisorIndexDataGetTest_TestAction.Conditions.Add(rowCountCondition1);
+         DemoVCom_AdvisorIndexDataGetTest_TestAction.Conditions.Add(expectedSchemaCondition1);
+         resources.ApplyResources(DemoVCom_AdvisorIndexDataGetTest_TestAction, "DemoVCom_AdvisorIndexDataGetTest_TestAction");
+         // 
+         // rowCountCondition1
+         // 
+         rowCountCondition1.Enabled = true;
+         rowCountCondition1.Name = "rowCountCondition1";
+         rowCountCondition1.ResultSet = 1;
+         rowCountCondition1.RowCount = 2;
+         // 
+         // expectedSchemaCondition1
+         // 
+         expectedSchemaCondition1.Enabled = true;
+         expectedSchemaCondition1.Name = "expectedSchemaCondition1";
+         resources.ApplyResources(expectedSchemaCondition1, "expectedSchemaCondition1");
+         expectedSchemaCondition1.Verbose = false;
+         // 
+         // DemoVCom_AdvisorIndexDataGetTest_PretestAction
+         // 
+         resources.ApplyResources(DemoVCom_AdvisorIndexDataGetTest_PretestAction, "DemoVCom_AdvisorIndexDataGetTest_PretestAction");
+         // 
+         // DemoVCom_AdvisorIndexDataGetTest_PosttestAction
+         // 
+         resources.ApplyResources(DemoVCom_AdvisorIndexDataGetTest_PosttestAction, "DemoVCom_AdvisorIndexDataGetTest_PosttestAction");
+         // 
+         // DemoVCom_AdvisorIndexDataGetTestData
+         // 
+         this.DemoVCom_AdvisorIndexDataGetTestData.PosttestAction = DemoVCom_AdvisorIndexDataGetTest_PosttestAction;
+         this.DemoVCom_AdvisorIndexDataGetTestData.PretestAction = DemoVCom_AdvisorIndexDataGetTest_PretestAction;
+         this.DemoVCom_AdvisorIndexDataGetTestData.TestAction = DemoVCom_AdvisorIndexDataGetTest_TestAction;
+      }
 
-        #endregion
+      #endregion
 
 
-        #region Additional test attributes
-        //
-        // You can use the following additional attributes as you write your tests:
-        //
-        // Use ClassInitialize to run code before running the first test in the class
-        // [ClassInitialize()]
-        // public static void MyClassInitialize(TestContext testContext) { }
-        //
-        // Use ClassCleanup to run code after all tests in a class have run
-        // [ClassCleanup()]
-        // public static void MyClassCleanup() { }
-        //
-        #endregion
+      #region Additional test attributes
+      //
+      // You can use the following additional attributes as you write your tests:
+      //
+      // Use ClassInitialize to run code before running the first test in the class
+      // [ClassInitialize()]
+      // public static void MyClassInitialize(TestContext testContext) { }
+      //
+      // Use ClassCleanup to run code after all tests in a class have run
+      // [ClassCleanup()]
+      // public static void MyClassCleanup() { }
+      //
+      #endregion
 
-        [TestMethod()]
+      [TestMethod()]
         public void DemoVCom_AdvisorIndexDataGetTest()
         {
             SqlDatabaseTestActions testActions = this.DemoVCom_AdvisorIndexDataGetTestData;

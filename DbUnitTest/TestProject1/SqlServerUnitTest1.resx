@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="expectedSchemaCondition1.Configuration" xml:space="preserve">
-    <value>Press to configure</value>
+    <value>Presione para configurar</value>
   </metadata>
   <data name="expectedSchemaCondition1.Schema" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
@@ -164,7 +164,7 @@ DECLARE
 @CompanyMasterEntityID AS INT, 
 @GetOnlyActive AS BIT, 
 @GetOnlyInactive AS BIT;
-
+-- DECLARE VALUES TO EXEC STORE PROCEDURE, IT WILL BRING ALL ACTIVE RECORDS FROM 2019-01-02 WITH ALL ADVISORMASTERID AND COMPANYMASTERID
 SELECT @RC = 0,
        @DateFrom = N'2019-01-02',
        @AdvisorMasterEntityID = NULL,
@@ -178,30 +178,8 @@ SELECT @RC AS RC;
 
 </value>
   </data>
-  <data name="DemoVCom_AdvisorIndexDataGetTest_PosttestAction.SqlScript" xml:space="preserve">
-    <value>/*
-Add SQL statements here that you want to run after 
-the test script is run.
-
-In the lower pane, you can add test conditions that verify 
-whether the results of your SQL statements match what 
-you expect.
-*/
-
--- ELIMINO DATOS FAKE
-DELETE FROM [DemoVCom].[AdvisorIndexData]</value>
-  </data>
   <data name="DemoVCom_AdvisorIndexDataGetTest_PretestAction.SqlScript" xml:space="preserve">
-    <value>/*
-Add SQL statements here that you want to run before
-the test script is run.
-
-In the lower pane, you can add test conditions that verify 
-whether the results of your SQL statements match what 
-you expect.
-*/
-
--- AGREGO DATOS FAKE PARA LA PRUEBA
+    <value>-- AGREGO DATOS FAKE PARA LA PRUEBA
 
 INSERT INTO [DemoVCom].[AdvisorIndexData] (DateFrom, AdvisorMasterEntityID, CompanyMasterEntityID, Active) 
 VALUES ('2019-01-01', 1,2,1);
@@ -212,6 +190,10 @@ VALUES ('2019-01-03', 2,2,0);
 INSERT INTO [DemoVCom].[AdvisorIndexData] (DateFrom, AdvisorMasterEntityID, CompanyMasterEntityID, Active) 
 VALUES ('2019-01-04', 1,2,1);
 </value>
+  </data>
+  <data name="DemoVCom_AdvisorIndexDataGetTest_PosttestAction.SqlScript" xml:space="preserve">
+    <value>-- ELIMINO DATOS FAKE
+DELETE FROM [DemoVCom].[AdvisorIndexData]</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
